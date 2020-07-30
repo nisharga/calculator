@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="cal-fav-icon.jpg" type="image/x-icon">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!-- stylesheet -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h3 class="display-5 text-right">Nisharga Kabir Calculator</h3>
+<section class="calculator-section ">
+  <div class="container d-flex justify-content-center align-items-center">
+    <div class="row">
+      <div class="col-md-12">
+          <form action="" class="calculator" name="calculator">
+            <div class="calculator-sceen">
+             <input type="text" class="form-control" name="screen" disabled>
+            </div>
+            <div class="calculator-body">
+             
+
+              <input type="button" class="seven" value="7" onclick="calculator.screen.value += '7'">
+              <input type="button" class="eight" value="8" onclick="calculator.screen.value += '8'">
+              <input type="button" class="nine" value="9" onclick="calculator.screen.value += '9'">
+              <input type="button" class="devide" value="/" onclick="calculator.screen.value += '/'">
+              <input type="button" class="left" value="←" onclick="calculator.screen.value = calculator.screen.value.slice(0, -1)">
+             
+              <input type="button" class="four" value="4" onclick="calculator.screen.value += '4'">
+              <input type="button" class="five" value="5" onclick="calculator.screen.value += '5'">
+              <input type="button" class="six" value="6" onclick="calculator.screen.value += '6'">
+              <input type="button" class="into" value="*" onclick="calculator.screen.value += '*'">
+              <input type="button" class="cancel" value="C" onclick="calculator.screen.value = ''">
+             
+
+              <input type="button" class="one" value="1" onclick="calculator.screen.value += '1'">
+              <input type="button" class="two" value="2" onclick="calculator.screen.value += '2'">
+              <input type="button" class="three" value="3" onclick="calculator.screen.value += '3'">
+              <input type="button" class="minus" value="-" onclick="calculator.screen.value += '-'">
+              
+              
+              <input type="button" class="equal" value="=" onclick="calculator.screen.value = eval(calculator.screen.value)">
+             
+              <input type="button" class="zero" value="0" onclick="calculator.screen.value += '0'">
+              <input type="button" class="float" value="." onclick="calculator.screen.value += '.'">
+              
+              
+              <input type="button" class="plus" value="+" onclick="calculator.screen.value += '+'">
+
+            </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+ 
+
+  <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="Calculator.js"></script>
+</body>
+</html>

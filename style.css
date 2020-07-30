@@ -1,0 +1,99 @@
+html, 
+ /* =================
+  =====default css===== 
+  ====================*/
+body {
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.413);
+}
+.calculator-section {
+    height: 100%;
+  }
+  .container {
+    height: 100%;
+  }
+
+  /* =====================
+  ===== calculator css===== 
+  =======================*/
+  .calculator {
+	border: 5px solid;
+	padding: 30px 25px;
+	background: powderblue;
+	border-radius: 10px;
+}
+
+input {
+    padding: 8px 14px;
+    margin: 5px 3px;
+    border: none;
+    text-align: center;
+vertical-align: middle;
+  }
+  .calculator-sceen {
+	margin-bottom: 20px;
+}
+input{
+border: 1px solid;
+border-radius: 3px;
+}
+input:hover{
+    background-image: linear-gradient(to bottom, yellow, #FFD577);
+}
+.form-control:hover {
+	background: none;
+}
+.calculator-sceen input {
+    border: 1px solid;
+    padding: 25px 0px !important;
+    text-align: right;
+  }
+.equal{
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"]{
+    font-size:24px;
+}
+.form-control:focus {
+	color: #000;
+}
+.calculator-body {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'seven eight nine devide left'
+    'four five six into cancel'
+    'one two three minus equal'
+    'zero zero float plus equal'
+    ;
+}
+
+.seven{grid-area: seven;}
+.eight{grid-area: eight;}
+.nine{grid-area: nine;}
+.devide{grid-area: devide;}
+.left{grid-area: left;}
+
+.four{grid-area: four;}
+.five{grid-area: five;}
+.six{grid-area: six;}
+.into{grid-area: into;}
+.cancel{grid-area: cancel;}
+
+.one{grid-area: one;}
+.two{grid-area: two;}
+.three{grid-area: three;}
+.minus{grid-area: minus;}
+.equal{grid-area: equal;}
+
+.zero{grid-area: zero;}
+.float{grid-area: float;}
+.plus{grid-area: plus;}
+
+.equal {
+  line-height: 4.8;
+}
+.zero{
+   /* text-align: center; */
+}
